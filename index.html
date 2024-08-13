@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador y Desencriptador de Texto</h1>
+        <form id="cryptoForm">
+            <label for="textInput">Texto:</label>
+            <textarea id="textInput" rows="5"></textarea>
+
+            <label for="keyInput">Clave:</label>
+            <input type="text" id="keyInput">
+
+            <div class="buttons">
+                <button type="button" onclick="encriptarTexto()">Encriptar</button>
+                <button type="button" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+
+            <label for="result">Resultado:</label>
+            <textarea id="result" rows="5" readonly></textarea>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
